@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: gray;
+  height: 100vh;
+  width: 100%;
+  padding: 15px;
+
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 80px repeat(12, 1fr);
+  grid-template-rows: 2fr 1fr 2fr 3fr;
+}
+
+.container > div {
+  background: aqua;
+}
+
+.container > .sidebar {
+  background-color: purple;
+  grid-row: 1 / -1;
+}
+
+.header {
+  grid-column: 2 / -1;
+}
+
+.stat-one {
+  grid-column: 2 / 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+}
+.stat-two {
+  grid-column: 5 / 8;
+}
+.stat-three {
+  grid-column: 8 / 11;
+}
+.stat-four {
+  grid-column: 11 / -1;
+}
+
+.chart-one {
+  grid-column: 2 / 8;
+}
+
+.chart-two {
+  grid-column: 8 / -1;
+}
+
+.overview {
+  grid-column: 2 / 11;
+}
+
+.reminder {
+  grid-column: 11 / -1;
+}

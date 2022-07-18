@@ -1,0 +1,12 @@
+.parent {
+  background-color: red;
+  height: 500px;
+  width: 500px;
+  overflow: scroll;
+}
+
+.child {
+  background-color: green;
+  height: 800px;
+  width: 800px;
+}
